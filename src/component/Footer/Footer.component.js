@@ -7,6 +7,8 @@ import {
     Footer as SourceFooter
 } from 'SourceComponent/Footer/Footer.component';
 
+import './Footer.extension.style.scss';
+
 // Extend the original class (SourceFooter)
 // By subclassing it, we can change some of its behavior
 /** @namespace ScandyPwaApp/Component/Footer/Component */
