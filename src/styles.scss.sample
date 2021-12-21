@@ -1,0 +1,69 @@
+$button-color: hotpink;
+$button-color-hover: rgb(167, 60, 113);
+$button-border-color: black;
+
+.Heading {
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.Button {
+    appearance: none;
+    border: 1px solid $button-border-color;
+    padding: .25rem 1rem;
+    background-color: $button-color;
+
+    &:hover {
+        background-color: $button-color-hover;
+        cursor: pointer;
+    }
+
+    &-Wrapper {
+        .Button {
+            background-color: green;
+
+            &:hover {
+                background-color: rgb(35, 179, 35);
+                cursor: pointer;
+            }
+        } 
+
+        &_isLarge {
+            .Button {
+                width: 250px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+
+/**
+
+BEM (Block, Element, Modifier)
+
+1) Block (block) - Heading, Button, MyElement (.)
+   
+example:
+    .MyElement { ... }
+
+2) Element (elem) - Heading-Strong, Button-Icon, MyElement-Key (-)
+   
+example:
+    .Heading { 
+        &-Strong {
+            ...
+        }
+     }
+
+3) Modifiers (mods) - Heading_isLarge (boolean modifier), Button_type_icon (non-boolean modifier)
+   
+example:
+    .Heading { 
+        &_type {
+            &_icon { ... }
+        }
+    }
+
+**/
+

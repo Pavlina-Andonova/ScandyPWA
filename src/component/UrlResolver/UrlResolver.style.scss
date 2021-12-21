@@ -1,0 +1,17 @@
+$url-resolver-color: orange;
+$url-resolver-404-color: red;
+
+.UrlResolver {
+    margin: 50px 100px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    
+    &-Type {
+        color: $url-resolver-color;
+
+        &_type_404 {
+            color: $url-resolver-404-color;
+        }
+    }
+}
